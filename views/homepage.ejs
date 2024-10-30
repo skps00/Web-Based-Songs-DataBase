@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1{
+            text-align:center;
+            font-size:75px;
+            background-color: rgb(243, 250, 177);
+        }
+
+        Body {background-color: rgb(221, 246, 223);}
+        .stname{
+            text-align:center;
+            font-size:25px;
+        }
+        .search{
+            font-size:30px;
+        }
+        .btn {
+                display: inline-block;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                border: 1px solid transparent;
+                cursor: pointer;
+                background-image: none;
+                padding: 6px px 12px;
+                font-size: 25px;
+                line-height: 2;
+                border-radius: 3px;
+            }
+        .btn-primary {
+        color: rgba(0, 0, 0, 0.692);
+        background-color: #e5eaef;
+        border-color: #bed0e0;
+    }
+    .pull-right {float: right!important;}
+    .row:before {display: table; content: " ";}
+
+
+    .button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        float: right!important;
+    }
+    
+    .button:hover {background-color: #3e8e41}
+    
+    .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    
+    .button2:hover {background-color: #3e8e41}
+    
+    .button2:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    </style>
+    <script>
+        function search() {
+            console.log(document.getElementById("Input").value);
+        }
+        search();
+    </script>
+    <head>
+
+</head>
+
+    <h1><i>Welcome~ <%=name%></i></h1>
+
+<body>
+
+        <div class=stname>
+        <p>s12832089 *Li Ka Man<p>    
+        <p>s12878817 Chan Ka Hei</p>
+        <p>s12874580 Mak Chun Wai</p>
+        <p>s13121007 Woo host<p>
+        
+    </div>
+
+        <div class=row ml-md-auto>
+            <a href="/logout"><button class="button"> Logout </button></a> 
+            <a href="/create"><button class="button2">Create new songs </button></a>
+            <a href='/song'><button class="button2">Show All songs </button></a>
+    </div>
+
+</body>
+</html>
+
+
+
+
+

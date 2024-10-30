@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+            h1{
+            text-align:center;
+            font-size:70px;}
+
+          Body {background-color: rgb(221, 246, 223);}
+
+          form {border: 100px solid rgb(221, 246, 223);} 
+
+          input[type=text],input[type=password],select { 
+          width: 100%; 
+          margin: 3px 0;
+          padding: 15px 20px; 
+          border: 2px solid rgb(34, 228, 34); 
+          box-sizing: border-box; 
+          font-size:15px; }
+        
+        .container { 
+          padding: 40px; 
+          background-color: hsla(0, 0%, 100%, 0.249);} 
+
+        .loginform{
+          background-color: #3E8BE1;
+          padding: 0px;
+          font-size:30px;}
+
+          .button {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+          }
+          
+          .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 25px;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+
+    </style>
+</head>
+ <body>
+    <h1>Song Database Login</h1>
+
+    <div class="login">
+        <form action="/login" method="POST">
+          <form>
+
+            <!---Login form -->
+            <div class="loginform"> 
+            <div class="container"> 
+            <!---Input user name -->
+            <label for="name">Username: </label>
+            <input type="text" name="name" id="name" placeholder="Enter the Username">
+            <!---Input password  -->
+            <label for="password">Password: </label>
+            <input type="password"  name="password" id="pw" placeholder="Enter the Password">
+            <!---Login button  -->
+            <button class="button" type="submit"><span> Login </span></button> 
+          
+           </div> 
+        </form> 
+ </body>
+</html>
+
+
+
+
+
+
+
